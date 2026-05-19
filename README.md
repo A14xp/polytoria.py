@@ -3,6 +3,8 @@
 </p>
 
 <div align="center">
+
+# Polytoria.py
   
 [Installation](#installation)
 [Usage](#usage)
