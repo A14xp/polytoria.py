@@ -41,6 +41,7 @@ class Item:
         self.averageprice = data.get("averagePrice")
         self.version = data.get("version")
         self.sales = data.get("sales")
+        self.favorites = data.get("favorites")
 
 
     def __repr__(self):

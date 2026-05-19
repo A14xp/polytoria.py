@@ -10,3 +10,9 @@ class Polytoria:
         raw_data = await self._client.fetch_data(f"users/{user_id}", base_url="https://api.polytoria.com/v1/")
         
         return User(raw_data, self._client)
+    
+    async def user(self, item_id: int) -> User:
+ 
+        raw_data = await self._client.fetch_data(f"store/{item_id}", base_url="https://api.polytoria.com/v1/")
+        
+        return User(raw_data, self._client)
