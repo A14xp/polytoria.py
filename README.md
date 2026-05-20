@@ -5,16 +5,17 @@
 <div align="center">
 
 # Polytoria.py
-  
-[Installation](#Installation)
-[Usage](#Usage)
-[license](#License)
-[Credits](#Credits)
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.7+-blue.svg"/>
   <img src="https://img.shields.io/badge/license-MIT-green.svg"/>
 </p>
+
+[Installation](#Installation)
+[Usage](#Usage)
+[license](#License)
+[Credits](#Credits)
 
 
 
