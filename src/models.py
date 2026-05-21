@@ -103,3 +103,10 @@ class Guild: # /api/guilds/{id} /v1/guilds/{id}
 
     def __repr__(self):
         return f""
+
+class Forum: # /v1/forum
+    def __init__(self, data:dict, client):
+        self.client = client
+
+    def __repr__(self):
+        return f""
