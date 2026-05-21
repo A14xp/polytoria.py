@@ -17,7 +17,7 @@ class User:
         self.assetSales = data.get("assetSales")
         self.membershipType = data.get("membershipType")
         self.istaff = data.get("isStaff")
-        self.role = data.get("userRoleClass")
+        self.role = data.get("userRoleClass") # for anyone wondering this shows the role of the user like user, admin, item designer
         self.joindate = data.get("registeredAt")
         self.lastseen = data.get("lastSeenAt")
 
@@ -65,8 +65,8 @@ class Place: # /api/places /v1/api/places/{id}
         self.thumbnail = data.get("thumbnail")
         self.genre = data.get("genre")
         self.maxplayers = data.get("maxPlayers")
-        self.isactive = data.get("isActive")
-        self.istoolsenabled = data.get("isToolsEnabled")
+        self.active = data.get("isActive")
+        self.toolsenabled = data.get("isToolsEnabled")
         self.iscopyable = data.get("isCopyable")
         self.visits = data.get("visits")
         self.uniquevisits = data.get("uniqueVisits")
@@ -75,7 +75,7 @@ class Place: # /api/places /v1/api/places/{id}
         self.accesstype = data.get("accessType")
         self.accessprice = data.get("accessPrice")
         self.createdat = data.get("createdAt")
-        self.updatedat= data.get("updatedAt")
+        self.updatedat = data.get("updatedAt")
 
     def __repr__(self):
         return f""
