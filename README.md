@@ -26,6 +26,26 @@ Polytoria.py is a wrapper that lets you easily use the polytoria api.
 
 place holder
 
+# Example
+```python
+
+import Polytoria
+import asyncio
+
+async def main():
+
+  polytoria = Polytoria()
+
+  user = await polytoria.user(1)
+
+  print(user.name)
+
+if __name__ == "__main__":
+  asyncio.run(main())
+
+```
+
+
 # Usage
 
 Everything starts with the main polytoria module, followed by the specific resource you want to access. Below are references for resources you can access.
