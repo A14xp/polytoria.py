@@ -28,7 +28,8 @@ place holder
 
 # Usage
 
-Polytoria.User(id)
+
+### Polytoria.User(id)
 
 | Attribute | Type | Description |
 | :--- | :--- | :--- |
