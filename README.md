@@ -28,6 +28,8 @@ place holder
 
 # Usage
 
+Everything starts with the main polytoria module, followed by the specific resource you want to access. For example:  `polytoria.user()`
+
 
 ### Polytoria.User(id)
 
