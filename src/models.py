@@ -89,6 +89,17 @@ class Guild: # /api/guilds/{id} /v1/guilds/{id}
         self.client = client
 
         self.id = data.get("id")
+        self.name = data.get("name")
+        self.description = data.get("description")
+        self.creator = data["creator"]["name"]
+        self.thumbnail = data.get("thumbnail")
+        self.banner = data.get("banner")
+        self.color = data.get("color")
+        self.jointype = data.get("joinType")
+        self.membercount = data.get("memberCount")
+        self.vaultbalance = data.get("vaultBalance")
+        self.isverified = data.get("isVerified")
+        self.createdat = data.get("createdAt")
 
     def __repr__(self):
         return f""
