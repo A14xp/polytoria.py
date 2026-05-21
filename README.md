@@ -28,8 +28,7 @@ place holder
 
 # Usage
 
-Everything starts with the main polytoria module, followed by the specific resource you want to access. For example:  `polytoria.user()`
-
+Everything starts with the main polytoria module, followed by the specific resource you want to access. Below are references for resources you can access.
 
 ### Polytoria.User(id)
 
