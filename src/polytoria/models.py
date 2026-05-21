@@ -39,7 +39,7 @@ class Item:
         self.price = data.get("price")
         self.studprice = data.get("priceInStuds")
         self.averageprice = data.get("averagePrice")
-        self.version = data.get("version")
+        self.version = data.get("version") # gets if its 2.0 or 1.0 I think?
         self.sales = data.get("sales")
         self.favorites = data.get("favorites")
 
