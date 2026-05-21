@@ -36,9 +36,9 @@ async def main():
 
   polytoria = Polytoria()
 
-  user = await polytoria.user(1)
+  user = await polytoria.user(1) # gets the user with the id 1
 
-  print(user.name)
+  print(user.name) # prints the users name
 
 if __name__ == "__main__":
   asyncio.run(main())
