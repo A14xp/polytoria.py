@@ -28,7 +28,11 @@ place holder
 
 # Usage
 
-```python
-polytoria.user(id)
-polytoria.item(id)
-```
+Polytoria.User(id)
+
+| Attribute | Type | Description |
+| :--- | :--- | :--- |
+| `name` | `str` | The username of the player. |
+| `description` | `str` | The user's profile description. |
+| `join_date` | `str` | The date the user joined Polytoria. |
+| `is_admin` | `bool` | Whether the user is an administrator. |
