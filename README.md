@@ -132,3 +132,8 @@ Everything starts with the main polytoria module, followed by the specific resou
 | `vaultbalance` | `int` |
 | `isverified` | `bool` |
 | `createdat` | `str` |
+
+### Polytoria.user2id(username)
+| Attribute | Type |
+| :--- | :--- |
+| `id` | `int` |
