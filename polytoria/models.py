@@ -115,7 +115,7 @@ class Forum: # /v1/forum
     def __repr__(self):
         return f""
 
-class user2id:
+class User2id:
     def __init__(self, data:dict, client):
         self.client = client
 
