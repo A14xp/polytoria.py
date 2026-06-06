@@ -1,5 +1,5 @@
 from .api_client import APIClient
-from .models import User, Item, Place, Guild, User2id
+from .models import User, Item, Place, Guild, User2id, Download
 
 class Polytoria:
     def __init__(self, browser: str = "chrome"):
@@ -33,3 +33,9 @@ class Polytoria:
         raw_data = await self._client.fetch_data(f"users/find?username={username}", base_url="https://api.polytoria.com/v1/")
         
         return User2id(raw_data, self._client)
+
+    async def download(self, asset_id: int) -> download:
+        raw_data = await self._client.fetch_data(f"assets/serve-mesh/{asset_id}", base_url="https://api.polytoria.com/v1/")
+        
+        return download(raw_data, self._client)
+
