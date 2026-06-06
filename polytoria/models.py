@@ -123,3 +123,18 @@ class User2id:
 
     def __repr__(self):
         return f""
+
+class Download: # /v1/assets/serve-mesh/{id}
+    def __init__(self, data:dict, client):
+        self.client = client
+
+        self._file = None
+
+    async def mesh(self):
+        if self._file is None:
+            result = await self.client.fetch_data(f"assets/serve-mesh/{self.id}", base_url="https://api.polytoria.com/v1/")
+            self._file = result["url"]
+        return self._file
+
+    def __repr__(self):
+        return f""
