@@ -128,13 +128,16 @@ class Download: # /v1/assets/serve-mesh/{id}
     def __init__(self, data:dict, client):
         self.client = client
 
-        self._file = None
+        self.id = data.get("id")
+        self._file = data.get("url")
 
     async def mesh(self):
         if self._file is None:
+            if self.id is None:
+                raise ValueError("Download is missing asset id")
             result = await self.client.fetch_data(f"assets/serve-mesh/{self.id}", base_url="https://api.polytoria.com/v1/")
             self._file = result["url"]
         return self._file
 
     def __repr__(self):
-        return f""
+        return f"id={self.id}"
