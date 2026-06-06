@@ -138,6 +138,14 @@ class Download: # /v1/assets/serve-mesh/{id}
             result = await self.client.fetch_data(f"assets/serve-mesh/{self.id}", base_url="https://api.polytoria.com/v1/")
             self._file = result["url"]
         return self._file
+    
+    async def texture(self):
+        if self._file is None:
+            if self.id is None:
+                raise ValueError("Download is missing asset id")
+            result = await self.client.fetch_data(f"assets/serve/{self.id}", base_url="https://api.polytoria.com/v1/")
+            self._file = result["url"]
+        return self._file
 
     def __repr__(self):
         return f"id={self.id}"
