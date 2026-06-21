@@ -31,12 +31,12 @@ pip install polytoria.py
 # Example
 ```python
 
-import Polytoria
+import polytoria
 import asyncio
 
-async def main():
+polytoria = polytoria.client # initalize the client
 
-  polytoria = Polytoria() # initalize the client
+async def main():
 
   user = await polytoria.user(1) # gets the user with the id 1
 
@@ -72,7 +72,7 @@ Everything starts with the main polytoria module, followed by the specific resou
 | `userroleclass` | `str` |
 | `joindate` | `str` |
 | `lastseen` | `str` |
-| `linked` | `dict` |
+| `linked()` | `dict` |
 
 ### Polytoria.Item(id)
 
@@ -132,3 +132,14 @@ Everything starts with the main polytoria module, followed by the specific resou
 | `vaultbalance` | `int` |
 | `isverified` | `bool` |
 | `createdat` | `str` |
+
+### Polytoria.user2id(username)
+| Attribute | Type |
+| :--- | :--- |
+| `id` | `int` |
+
+### Polytoria.download(id)
+| Attribute | Type |
+| :--- | :--- |
+| `mesh()` | `str` |
+| `texture()` | `str` |
