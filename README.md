@@ -31,10 +31,8 @@ pip install polytoria.py
 # Example
 ```python
 
-import polytoria
+from polytoria import polytoria
 import asyncio
-
-polytoria = polytoria.client # initalize the client
 
 async def main():
 
