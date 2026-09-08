@@ -23,7 +23,7 @@
 Polytoria.py is a wrapper that lets you easily use the polytoria api inside of python.
 
 > [!WARNING]
-> test
+> This bot is in very early alpha. Expect things to be broken or missing.
 
 # Installation
 
