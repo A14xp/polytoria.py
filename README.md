@@ -22,6 +22,9 @@
 # Introduction
 Polytoria.py is a wrapper that lets you easily use the polytoria api inside of python.
 
+> [!WARNING]
+> This may not work currently because of cloudflare
+
 # Installation
 
 ```bash
