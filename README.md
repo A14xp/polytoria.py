@@ -20,8 +20,6 @@
 <div align="left">
 
 # Introduction
-> [!WARNING]
-> This bot is in very early alpha. Expect things to be broken or missing.
 Polytoria.py is a wrapper that lets you easily use the polytoria api inside of python.
 
 # Installation
